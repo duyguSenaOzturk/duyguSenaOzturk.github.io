@@ -249,6 +249,32 @@
           which operates on the Robot Operating System (ROS). This architecture ensures a seamless flow of data and commands
           between the user and the robot, enabling efficient and responsive teleoperations.
           </p>
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-half has-text-centered">
+                <figure class="image is-4by3">
+                  <img src="./static/images/diagram.png" alt="Logo">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <h2 class="title is-3"> General Structure of the Project </h2>
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-half has-text-centered">
+                <figure class="image is-4by3">
+                  <img src="./static/images/scheme.png" alt="Logo">
+                </figure>
+              </div>
+            </div>
+          </div>
+          
+          <h2 class="title is-3"> How it Works ? </h2>
+          <p>
+            The browser's web page is the frontend, Rosbridge is the middleware, and ROS is the backend. In our project, Rosbridge and ROS are running on the same robot, which gives us better latency and we don't have to specify the connection from Rosbridge to ROS. The production build of the website is served from robot's computer as well, which means that devices that want to access the site have to be on the same LAN as the robot is.
+
+ROS nodes represent the features. They have to communicate with each other and ROS to take data, process it, and publish it back to the system. The user subscribes/unsubscribes to these nodes from the website interface by click on their respective buttons.
+            </p>
           <!-- <p>
             We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
             photos/videos into deformable NeRF
